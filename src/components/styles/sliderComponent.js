@@ -7,6 +7,7 @@ export const Container = styled.div`
   position: relative;
   overflow: hidden;
   margin-top: 20px;
+  background-color: #fff;
 `;
 
 export const Wrapper = styled.div`
