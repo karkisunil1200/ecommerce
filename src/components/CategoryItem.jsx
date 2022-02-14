@@ -1,7 +1,22 @@
 import React from "react";
+import {
+  Container,
+  Image,
+  Info,
+  Title,
+  Button,
+} from "./styles/categoryComponent";
 
-const CategoryItem = () => {
-  return <div>CategoryItem</div>;
+const CategoryItem = ({ item }) => {
+  return (
+    <Container>
+      <Image src={item.img} />
+      <Info>
+        <Title>{item.title}</Title>
+        <Button>SHOP NOW</Button>
+      </Info>
+    </Container>
+  );
 };
 
 export default CategoryItem;
