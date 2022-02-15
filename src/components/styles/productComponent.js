@@ -12,6 +12,8 @@ export const Info = styled.div`
   display: flex;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 `;
 
 export const Container = styled.div`
