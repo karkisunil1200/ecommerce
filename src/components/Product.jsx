@@ -1,7 +1,35 @@
+import {
+  FavoriteBorderOutlined,
+  SearchOutlined,
+  ShoppingCartOutlined,
+} from "@mui/icons-material";
 import React from "react";
+import {
+  Container,
+  Circle,
+  Icon,
+  Image,
+  Info,
+} from "./styles/productComponent";
 
 const Product = ({ item }) => {
-  return <div>Product</div>;
+  return (
+    <Container>
+      <Circle />
+      <Image src={item.img} />
+      <Info>
+        <Icon>
+          <ShoppingCartOutlined />
+        </Icon>
+        <Icon>
+          <SearchOutlined />
+        </Icon>
+        <Icon>
+          <FavoriteBorderOutlined />
+        </Icon>
+      </Info>
+    </Container>
+  );
 };
 
 export default Product;
