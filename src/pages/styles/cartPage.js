@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  height: 100vh;
+`;
 export const Wrapper = styled.div`
   padding: 20px;
 `;
@@ -106,4 +108,31 @@ export const Hr = styled.hr`
 
 export const Summary = styled.div`
   flex: 1;
+  border: 0.5px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+  height: 50vh;
+`;
+
+export const SummaryTitle = styled.h1`
+  font-weight: 200;
+`;
+
+export const SummaryItem = styled.div`
+  margin: 30px 0;
+  justify-content: space-between;
+  display: flex;
+  font-weight: ${(props) => props.type === "total" && "500"};
+  font-size: ${(props) => props.type === "total" && "24px"};
+`;
+
+export const SummaryItemText = styled.span``;
+
+export const SummaryItemPrice = styled.span``;
+
+export const Button = styled.button`
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
 `;

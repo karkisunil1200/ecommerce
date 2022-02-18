@@ -27,6 +27,11 @@ import {
   ProductAmount,
   ProductPrice,
   Hr,
+  SummaryItem,
+  SummaryItemText,
+  SummaryTitle,
+  SummaryItemPrice,
+  Button,
 } from "./styles/cartPage";
 
 const Cart = () => {
@@ -98,7 +103,24 @@ const Cart = () => {
               </PriceDetail>
             </Product>
           </Info>
-          <Summary>Summary</Summary>
+          <Summary>
+            <SummaryTitle>Order Summary</SummaryTitle>
+
+            <SummaryItem>
+              <SummaryItemText>Subtotal</SummaryItemText>
+              <SummaryItemPrice>$80.49</SummaryItemPrice>
+            </SummaryItem>
+
+            <SummaryItem>
+              <SummaryItemText>Estimated Shipping</SummaryItemText>
+              <SummaryItemPrice>$5.90</SummaryItemPrice>
+            </SummaryItem>
+            <SummaryItem type="total">
+              <SummaryItemText>Total: </SummaryItemText>
+              <SummaryItemPrice>$95.90</SummaryItemPrice>
+            </SummaryItem>
+            <Button>Checkout Now</Button>
+          </Summary>
         </Bottom>
       </Wrapper>
       <Footer />

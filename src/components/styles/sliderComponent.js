@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mobile } from "../../responsive";
 
 export const Container = styled.div`
   height: 80vh;
@@ -8,6 +9,8 @@ export const Container = styled.div`
   overflow: hidden;
   margin-top: 20px;
   background-color: #fff;
+
+  ${mobile({ display: "none" })}
 `;
 
 export const Wrapper = styled.div`
