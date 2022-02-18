@@ -97,6 +97,13 @@ export const ProductAmount = styled.div`
   margin: 5px;
 `;
 
+export const Hr = styled.hr`
+  background-color: #eee;
+  border: none;
+  height: 3px;
+  margin: 10px 0;
+`;
+
 export const Summary = styled.div`
   flex: 1;
 `;

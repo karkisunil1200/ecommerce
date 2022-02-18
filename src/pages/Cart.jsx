@@ -26,6 +26,7 @@ import {
   ProductAmountContainer,
   ProductAmount,
   ProductPrice,
+  Hr,
 } from "./styles/cartPage";
 
 const Cart = () => {
@@ -56,6 +57,32 @@ const Cart = () => {
                     <b>ID: </b> 92384293485
                   </ProductId>
                   <ProductColor color="black" />
+                  <ProductSize>
+                    <b>Size</b> 23.5
+                  </ProductSize>
+                </Details>
+              </ProductDetail>
+              <PriceDetail>
+                <ProductAmountContainer>
+                  <Add />
+                  <ProductAmount>2</ProductAmount>
+                  <Remove />
+                </ProductAmountContainer>
+                <ProductPrice>$30.99</ProductPrice>
+              </PriceDetail>
+            </Product>
+            <Hr />
+            <Product>
+              <ProductDetail>
+                <Image src="https://images4.alphacoders.com/122/122964.jpg" />
+                <Details>
+                  <ProductName>
+                    <b>Product: </b> Awesome Sniper
+                  </ProductName>
+                  <ProductId>
+                    <b>ID: </b> 92384293485
+                  </ProductId>
+                  <ProductColor color="tomato" />
                   <ProductSize>
                     <b>Size</b> 23.5
                   </ProductSize>
